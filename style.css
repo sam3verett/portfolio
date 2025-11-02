@@ -1,0 +1,90 @@
+:root {
+  /* Light mode palette */
+  --bg-color: #f8f5f0;        /* light beige */
+  --text-color: #1b1b1b;      /* charcoal text */
+  --link-color: #2e5d3b;      /* pine green */
+  --accent-color: #3e724c;    /* forest hover */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #2c1f18;       /* deep brown */
+    --text-color: #f2e9dc;     /* cream text */
+    --link-color: #b4d1a1;     /* sage green */
+    --accent-color: #c8e2b7;   /* pale mint hover */
+  }
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+ font-family: "Courier New", Courier, monospace;
+  line-height: 1.7;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--link-color);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: lowercase;
+}
+
+h2 {
+  color: var(--link-color);
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.links li,
+.works li,
+.experience li {
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--link-color);
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration-color: var(--accent-color);
+}
