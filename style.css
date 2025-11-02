@@ -1,19 +1,20 @@
 :root {
-  /* Light mode palette */
-  --bg-color: #f8f5f0;        /* light beige */
-  --text-color: #1b1b1b;      /* charcoal text */
-  --link-color: #2e5d3b;      /* pine green */
-  --accent-color: #3e724c;    /* forest hover */
+  /* Light mode */
+  --bg-color: #f8f5f0;     /* light beige */
+  --text-color: #1b1b1b;   /* dark gray text */
+  --link-color: #2f5d50;   /* pine green */
+  --accent-color: #4f7c68; /* deeper forest green */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #2c1f18;       /* deep brown */
-    --text-color: #f2e9dc;     /* cream text */
-    --link-color: #b4d1a1;     /* sage green */
-    --accent-color: #c8e2b7;   /* pale mint hover */
+    --bg-color: #1f1f1f;     /* charcoal gray */
+    --text-color: #f5f3ef;   /* off-white text */
+    --link-color: #9cc3b1;   /* muted green */
+    --accent-color: #b9d2c3; /* pale moss green */
   }
 }
+
 
 body {
   margin: 0;
